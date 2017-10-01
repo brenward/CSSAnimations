@@ -1,0 +1,12 @@
+button:focus{
+    background-color:yellow;
+}
+
+button:active{
+    background-color: red;
+    font-size: 30px;
+}
+
+button:hover{
+    background-color: orange;
+}

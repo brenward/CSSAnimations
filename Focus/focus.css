@@ -1,0 +1,7 @@
+input:focus{
+    background-color:red;
+}
+
+button:focus{
+    color: green;
+}
