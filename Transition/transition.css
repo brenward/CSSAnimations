@@ -1,0 +1,39 @@
+.box{
+    background: #9b59b6;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+/* TRANSITION PROPERTY, DURATION, DELAY EXAMPLE */
+/*.box:hover{
+    background: #e74c3c;
+    transform-origin: top left;
+    transform: scale(2);
+    border-radius: 50px;
+}
+
+.animated{
+    transition-property: background-color, border-radius;
+    transition-duration: 1s, 5s;
+    transition-delay: 1s, 2s;
+}*/
+
+.box:hover{
+    transform: translateX(300px);
+    background-color: teal;
+}
+
+.animated{
+    /* TRANSITION TIMING FUNCTION EXAMPLE */
+    /*transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;*/
+
+
+    transition: transform 1.5s ease-in 1s, background-color 0.5s linear;
+}
