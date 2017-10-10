@@ -19,10 +19,53 @@
     }
 }
 
-p{
+.first{
     animation-name: rainbowtext;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-delay: 0s;
     animation-iteration-count: infinite;
+
+    animation-direction: alternate;
+}
+
+.first:hover{
+    animation-play-state: paused;
+}
+
+.box{
+    height: 50px;
+    background-color: green;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.box:hover{
+    animation-name: changecolor;
+    animation-delay: 2s;
+    animation-duration: 3s;
+}
+
+.forwards{
+    /* stays end color */
+    animation-fill-mode: forwards;
+}
+
+.backwards{
+    /*starts at 0 regardless of delay but animation doesn't start until delay */
+    animation-fill-mode: backwards;
+}
+
+.both{
+    /*combines forwards and backwards i.e. starts at 0, delays, then animates, stays at 100 */
+    animation-fill-mode: both;
+}
+
+@keyframes changecolor{
+    0%{
+        background-color: #f1c40f;
+    }
+    100%{
+        background-color: #e74c3c;
+    }
 }
